@@ -56,6 +56,4 @@ Gostou do projeto? Ajude a manter o JeanKasoki motivado para novas traduções e
 
 ---
 
----
-
-Desenvolvido por **JeanKasoki** &copy; 2026.
+Desenvolvido por **JeanKasoki & Niccbilac** &copy; 2026.
