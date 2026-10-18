@@ -1,7 +1,7 @@
 # 🎮 Naruto Shippuden: Ultimate Ninja Storm Generations | Tradução PT-BR
 
 ![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen)
-![Plataformas](https://img.shields.io/badge/Plataformas-PS3%20%7C%20Xbox%20360%20%7C%20PC-orange)
+![Plataformas](https://img.shields.io/badge/Plataformas-PS3%20%7C%20Xbox%20360%20%7C%20Emuladores-orange)
 
 Tradução completa e independente para o título **Naruto Shippuden: Ultimate Ninja Storm Generations**. Este projeto traz a localização total para o Português Brasileiro, abrangendo menus, legendas e interface para consoles e emuladores.
 
