@@ -287,6 +287,27 @@
             color: black;
         }
 
+        .btn-hub {
+            display: inline-block;
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: 0.3s;
+            backdrop-filter: blur(5px);
+        }
+
+        .btn-hub:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #000;
+            transform: scale(1.05);
+        }
+
         /* =========================
            INFO
         ========================= */
@@ -431,78 +452,57 @@
         }
 
         /* =========================
-   MODAL DAS IMAGENS
-========================= */
+           MODAL DAS IMAGENS
+        ========================= */
 
-.image-modal {
+        .image-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.92);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            cursor: pointer;
+        }
 
-    display: none;
+        .modal-content {
+            max-width: 95%;
+            max-height: 95%;
+            border-radius: 15px;
+            animation: zoomIn 0.2s ease;
+        }
 
-    position: fixed;
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            cursor: pointer;
+        }
 
-    z-index: 9999;
-
-    left: 0;
-    top: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0,0,0,0.92);
-
-    justify-content: center;
-    align-items: center;
-
-    padding: 20px;
-
-    cursor: pointer;
-}
-
-.modal-content {
-
-    max-width: 95%;
-    max-height: 95%;
-
-    border-radius: 15px;
-
-    animation: zoomIn 0.2s ease;
-}
-
-.close-modal {
-
-    position: absolute;
-
-    top: 20px;
-    right: 35px;
-
-    color: white;
-
-    font-size: 50px;
-    font-weight: bold;
-
-    cursor: pointer;
-}
-
-@keyframes zoomIn {
-
-    from {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-
-}
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
 
         /* =========================
            RESPONSIVO
         ========================= */
 
         @media (max-width: 768px) {
-
             .hero {
                 height: auto;
                 padding: 120px 20px;
@@ -516,7 +516,6 @@
             .download-grid {
                 grid-template-columns: 1fr;
             }
-
         }
 
     </style>
@@ -547,6 +546,11 @@
                 A tradução definitiva de Naruto Storm Generations
                 para PlayStation 3 e Xbox 360.
             </p>
+
+            <!-- BOTÃO DO CATÁLOGO INSERIDO AQUI -->
+            <a href="https://jeankasoki.github.io/traducoes/" class="btn-hub">
+                <i class="fas fa-gamepad"></i> Ver Todas as Minhas Traduções
+            </a>
 
         </div>
 
@@ -585,7 +589,6 @@
             <p class="download-subtitle">
                 Arquivos de PS3 hospedados no Drive em formato PASTA (JB Folder)
                 e de Xbox 360 no Mediafire em formato .XEX
-                
             </p>
 
             <!-- PS3 -->
